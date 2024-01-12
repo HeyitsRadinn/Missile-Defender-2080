@@ -3,7 +3,7 @@ import pygame
 class PlayerInputHandler:
     def __init__(self):
         self.selected_tower = 0
-        self.aim_position = (0, 0)
+        self.aim_position = (0, 0)  
 
     def update(self):
         # Update the aim position based on mouse position
