@@ -6,9 +6,14 @@ import pygame
 # Define the PlayerInputHandler class
 class PlayerInputHandler:
     def __init__(self):
+<<<<<<< HEAD
         # Initialize selected tower and aim position
         self.selected_tower = 0  # Default selected tower index
         self.aim_position = (0, 0)  # Default aim position
+=======
+        self.selected_tower = 0
+        self.aim_position = (0, 0)  
+>>>>>>> d9b6d6f4a256c7f41618f14df8aee7d6befb4152
 
     def update(self):
         # Update the player's input state
