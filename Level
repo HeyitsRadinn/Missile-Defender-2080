@@ -1,0 +1,23 @@
+import random
+
+class AlienGameManager:
+    def __init__(self):
+        self.current_level = 1
+        self.enemy_wave_size = 5
+        self.enemies_remaining = 0
+
+    def start_level(self):
+        print(f"Starting Level {self.current_level}")
+        self.enemies_remaining = self.enemy_wave_size
+        self.spawn_enemies()
+
+    def enemy_defeated(self):
+        self.enemies_remaining -= 1
+        if self.enemies_remaining == 0:
+            print(f"All enemies defeated. Proceeding to the next level.")
+            self.advance_to_next_level()
+
+    def advance_to_next_level(self):
+        self.current_level += 1
+        self.enemy_wave_size += 2
+        self.start_level()
